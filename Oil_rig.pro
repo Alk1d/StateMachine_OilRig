@@ -10,12 +10,10 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp \
-    oil_station.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h \
-    oil_station.h
+    mainwindow.h
 
 FORMS += \
     mainwindow.ui
