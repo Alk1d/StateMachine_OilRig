@@ -123,6 +123,11 @@ void MainWindow::on_Money_spinBox_valueChanged(int arg1)
 
 void MainWindow::on_SellFuel_button_clicked()
 {
+    if (OilRig_StateMachine->configuration().contains(FuelCreation))
+    {
+        ui->State_label->setText("Creating fuel, wait!");
+        return;
+    }
     int Fuel_amount = ui->Fuel_spinBox->value();
     if (Fuel_amount > 0)
     {
